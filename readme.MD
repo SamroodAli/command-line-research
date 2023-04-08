@@ -12,6 +12,20 @@ This is me learning the command line.
 - CTRL + L - clear the screen
 - CTRL + R – reverse search through history
 
+## Signals
+
+- CTRL + C - SIGINT -- Interrupt Signal - signal to interrupt what it's doing and stop.
+- CTRL + D - SIGQUIT -- Quit Signal - Force quit the program.
+- SIGTERM signal
+
+  - kill command or when the computer is shutting down
+  - usually the computer sends this signal and not us
+  - telling the programs to shut down
+
+- SIGKILL - when we run `kill -9` or `kill -SIGKILL` - when we want a program to force shut down now.
+
+There are other signals. Run `kill -l` to list them.
+
 # Escaping with backslash
 
 ```bash
@@ -96,20 +110,6 @@ This won' work with letters
 echo {z..x}{1..4} # z1 z2 z3 z4 y1 y2 y3 y4 x1 x2 x3 x4
 
 ```
-
-## Signals
-
-- CTRL + C - SIGINT -- Interrupt Signal - signal to interrupt what it's doing and stop.
-- CTRL + D - SIGQUIT -- Quit Signal - Force quit the program.
-- SIGTERM signal
-
-  - kill command or when the computer is shutting down
-  - usually the computer sends this signal and not us
-  - telling the programs to shut down
-
-- SIGKILL - when we run `kill -9` or `kill -SIGKILL` - when we want a program to force shut down now.
-
-There are other signals. Run `kill -l` to list them.
 
 # Attribution
 
